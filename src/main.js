@@ -5,5 +5,7 @@ import 'element-plus/dist/index.css'
 import router from './router'
 import App from './App.vue'
 import { createPinia } from 'pinia'
+import eruda from 'eruda'
+eruda.init();
 
 createApp(App).use(router).use(createPinia()).use(ElementPlus).mount('#app')
